@@ -4,7 +4,7 @@ import time
 
 pygame.init()
 
-width,height=600,600
+width,height=1000,1000
 
 screen =pygame.display.set_mode((height,width))
 
@@ -54,7 +54,7 @@ while True:
                 nn =3
                 if gameState[x,y]==0 and n_neigh ==nn:
                      newGameState[x,y]=1
-                elif gameState[x,y] and (n_neigh <1 or n_neigh>3):
+                elif gameState[x,y] and (n_neigh <2 or n_neigh>4):
                     newGameState[x,y]=0  
 
             poly =[(x*dimCW,y*dimCH),                             
